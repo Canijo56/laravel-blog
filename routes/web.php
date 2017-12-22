@@ -77,3 +77,8 @@ Route::get('/tests', function () {
 
 /* trying stupid things! */
 Route::get('/', 'PostsController@index');
+
+/* reporting new feature! */
+Route::get('/features', function () {
+    return "yuuhuu";
+});
