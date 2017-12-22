@@ -14,7 +14,6 @@
 // u can import namespaces!! (so TASK is Task, and not App\Tasks)
 use App\Task;
 
-
 //dd(resolve('App\Billing\Stripe'));
 
 
@@ -54,23 +53,27 @@ Route::get('/about', function () {
 });
 
 Route::get('/tests', function () {
-    
+
     //this kind of code will go to Controllers!
     $tasks = [
-    	'Do this',
-    	'Do that',
-    	'Do also this'
+        'Do this',
+        'Do that',
+        'Do also this'
     ];
 
-    return view('tests', 
-    	[
-    	'var1' => 'Pepe',
-    	'var2' => 'Juan',
-    	'var3' => 'Lola',
-    	'var4' => 'Alvaro',
-    	'var5' => 'Pepe',
-    	'var6' => 'Pablo'
-    	],
-    	compact('tasks')
+    return view(
+        'tests',
+        [
+        'var1' => 'Pepe',
+        'var2' => 'Juan',
+        'var3' => 'Lola',
+        'var4' => 'Alvaro',
+        'var5' => 'Pepe',
+        'var6' => 'Pablo'
+        ],
+        compact('tasks')
     );
 });
+
+/* trying stupid things! */
+Route::get('/', 'PostsController@index');
