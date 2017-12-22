@@ -74,6 +74,3 @@ Route::get('/tests', function () {
         compact('tasks')
     );
 });
-
-/* trying stupid things! */
-Route::get('/', 'PostsController@index');
