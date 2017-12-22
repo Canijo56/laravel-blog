@@ -74,10 +74,3 @@ Route::get('/tests', function () {
         compact('tasks')
     );
 });
-/* trying stupid things! */
-Route::get('/', 'PostsController@index');
-
-/* reporting new feature! */
-Route::get('/features', function () {
-    return "yuuhuu";
-});
